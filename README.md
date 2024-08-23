@@ -1,8 +1,70 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# Daily Dev
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Daily Dev is an educational mobile application designed to showcase tech courses and instructors. It provides a platform for users to explore various technology fields and potential learning opportunities.
+
+## Features
+
+- User authentication (Login/Register)
+- Course browsing
+- User profile view
+- Instructor directory
+
+## Screens
+
+### 1. Login Screen
+![Login Screen](./images/login_screen.png)
+- Email and password input
+- Login button
+- "Forgot Password?" link
+- "Create account" link
+
+### 2. Registration Screen
+![Registration Screen](./images/register_screen.png)
+- Fields for full name, email, mobile number, password, national ID, and age
+- Sign Up button
+- Language toggle (English/French)
+
+### 3. User Profile
+![User Profile](./images/profile_screen.png)
+- Display user information (username, profile picture)
+- Show following, liked, and followers counts
+- List courses (static display)
+- Static "Courses" and "Settings" buttons
+
+### 4. Course Feed
+![Course Feed](./images/feed_screen.png)
+- Browse available courses
+- Course cards with details (title, instructor, duration, rating, price)
+- Like/favorite course option (visual only)
+
+### 5. Instructors List
+![Instructors List](./images/instructors_screen.png)
+- Search instructors by username
+- Display instructor profiles with profile pictures
+
+## Current Functionality
+
+- User Authentication: Implements login and registration processes
+- Course Discovery: Allows users to view available tech courses
+- Profile View: Users can view a static representation of their profile
+- Instructor Directory: Provides a searchable list of course instructors
+- API Integration: Fetches course and instructor data from a backend server
+
+## Limitations
+
+- Course enrollment is not currently implemented
+- Profile buttons ("Courses" and "Settings") are static and non-functional
+- Liking courses is visual only and does not affect the backend
+
+## Technical Notes
+
+- Built using React Native for cross-platform compatibility
+- Implements scrolling for course and instructor lists
+- Uses API calls to fetch instructor information
+
+Daily Dev is a prototype showcasing the potential for an educational platform in the tech space. Future iterations aim to include full course enrollment functionality and interactive profile features.
+
 
 ## Step 1: Start the Metro Server
 
@@ -32,48 +94,12 @@ npm run android
 yarn android
 ```
 
-### For iOS
 
-```bash
-# using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
-```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ provided you have set up your emulator/simulator correctly.
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
 
-Now that you have successfully run the app, let's modify it.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
